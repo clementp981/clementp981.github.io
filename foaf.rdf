@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/">
+
+  <foaf:Person rdf:about="#me">
+
+    <foaf:name>Pilotte Clément</foaf:name>
+    <foaf:givenName>Clément</foaf:givenName>
+    <foaf:familyName>Pilotte</foaf:familyName>
+    <foaf:title>M.</foaf:title>
+
+    <foaf:mbox_sha1sum>788af879e6ca6cfa9ee1b436942f5ba40997a568</foaf:mbox_sha1sum>
+
+    <foaf:homepage rdf:resource="https://clementp981.github.io/"/>
+
+    <foaf:schoolHomepage rdf:resource="https://www.univ-larochelle.fr/"/>
+    <foaf:workplaceHomepage rdf:resource="https://www.univ-larochelle.fr/"/>
+
+    <foaf:interest rdf:resource="https://fr.wikipedia.org/wiki/Web_semantique"/>
+
+    <foaf:based_near rdf:resource="https://fr.wikipedia.org/wiki/La_Rochelle"/>
+
+    <foaf:knows>
+      <foaf:Person>
+        <foaf:name>Alain Bouju</foaf:name>
+      </foaf:Person>
+    </foaf:knows>
+
+  </foaf:Person>
+</rdf:RDF>

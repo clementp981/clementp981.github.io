@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pilotte Clément - Page de presentation</title>
+
+  <link rel="meta" type="application/rdf+xml" title="FOAF" href="clementp981.github.io/foaf.rdf981.github.io/foaf.rdf">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --ink: #17171f;
+      --paper: #fbfbf8;
+      --muted: #6a6a72;
+      --line: #e4e4de;
+      --n1: #6c6ca8;
+      --n2: #e8574a;
+      --n3: #86b678;
+      --n4: #e6b93a;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Inter, system-ui, sans-serif;
+      line-height: 1.6;
+    }
+
+    .wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 72px 24px 96px;
+    }
+
+    .eyebrow {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 0.85rem;
+      color: var(--muted);
+      letter-spacing: 0.04em;
+      margin: 0 0 28px;
+    }
+
+    h1 {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: clamp(2.4rem, 7vw, 3.6rem);
+      font-weight: 700;
+      line-height: 1.05;
+      margin: 0 0 8px;
+    }
+
+    .role {
+      font-size: 1.15rem;
+      color: var(--muted);
+      margin: 0 0 40px;
+    }
+
+    .triples {
+      border-top: 1px solid var(--line);
+      margin: 40px 0;
+    }
+
+    .triple {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      gap: 16px;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--line);
+      align-items: baseline;
+    }
+
+    .pred {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .pred b { color: var(--ink); font-weight: 500; }
+
+    .obj a { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+
+    .node {
+      display: inline-block;
+      width: 9px; height: 9px;
+      border-radius: 50%;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+    .p { background: var(--n1); }
+    .d { background: var(--n2); }
+    .r { background: var(--n3); }
+    .l { background: var(--n4); }
+
+    h2 {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 1.3rem;
+      margin: 56px 0 12px;
+    }
+
+    p { margin: 0 0 16px; }
+
+    .foaf-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 0.95rem;
+      padding: 12px 18px;
+      border: 1px solid var(--ink);
+      border-radius: 4px;
+      color: var(--ink);
+      text-decoration: none;
+    }
+
+    footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <p class="eyebrow">Master 2 / Web Sémantique / Université de La Rochelle</p>
+
+    <h1>Pilotte Clément</h1>
+    <p class="role">Etudiant</p>
+
+    <p>
+      Cette page me decrit pour le TP Web semantique FOAF.
+    </p>
+
+    <section class="triples">
+      <div class="triple">
+        <span class="pred"><span class="node p"></span>foaf:<b>name</b></span>
+        <span class="obj">Pilotte Clément</span>
+      </div>
+      <div class="triple">
+        <span class="pred"><span class="node p"></span>foaf:<b>title</b></span>
+        <span class="obj">M.</span>
+      </div>
+      <div class="triple">
+        <span class="pred"><span class="node d"></span>foaf:<b>homepage</b></span>
+        <span class="obj"><a href="https://clementp981.github.io/">https://clementp981.github.io/</a></span>
+      </div>
+      <div class="triple">
+        <span class="pred"><span class="node d"></span>foaf:<b>schoolHomepage</b></span>
+        <span class="obj"><a href="https://www.univ-larochelle.fr/">univ-larochelle.fr</a></span>
+      </div>
+      <div class="triple">
+        <span class="pred"><span class="node d"></span>foaf:<b>interest</b></span>
+        <span class="obj">Web semantique, RDF, université</span>
+      </div>
+      <div class="triple">
+        <span class="pred"><span class="node r"></span>foaf:<b>currentProject</b></span>
+        <span class="obj">Manipulation de données FOAF</span>
+      </div>
+      <div class="triple">
+        <span class="pred"><span class="node l"></span>foaf:<b>based_near</b></span>
+        <span class="obj">La Rochelle</span>
+      </div>
+      <div class="triple">
+        <span class="pred"><span class="node p"></span>foaf:<b>knows</b></span>
+        <span class="obj">Alain Bouju</span>
+      </div>
+    </section>
+
+    <h2>Mon fichier FOAF</h2>
+    <p>
+      Le fichier ci-dessous decrit mon réseau au format RDF/XML. Un crawler
+        peut le lire et suivre les liens vers d'autres
+      personnes grace a rdfs:seeAlso.
+    </p>
+    <p>
+      <a class="foaf-link" href="clementp981.github.io/foaf.rdf981.github.io/foaf.rdf">
+        <span class="node p" style="margin:0"></span> Consulter foaf.rdf
+      </a>
+    </p>
+
+    <footer>
+      Page de presentation - Pilotte Clément - <span id="y"></span>
+    </footer>
+  </main>
+
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
